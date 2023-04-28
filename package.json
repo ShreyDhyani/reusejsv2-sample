@@ -13,6 +13,7 @@
     "gen:comp": "node ./scripts/scaffoldComponent.mjs"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.1",
     "autoprefixer": "^10.4.14",
     "concurrently": "^8.0.1",
     "eslint": "^7.32.0",
@@ -28,9 +29,7 @@
   "name": "reusev2-sample",
   "packageManager": "yarn@1.22.19",
   "workspaces": [
-    "apps/*",
-    "packages/*",
-    "packages/components/*"
+    "packages/*"
   ],
   "dependencies": {
     "@rollup/plugin-commonjs": "^24.1.0",

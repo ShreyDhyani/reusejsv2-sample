@@ -15,7 +15,10 @@ import {
   ReuseTextInput,
   ReusePasswordInput,
 } from "@shared-test/reusejsv2-sample-text-input";
-import { useHeadlessLogin } from "@shared-test/reusejsv2-sample-login-form";
+import {
+  ReuseLoginForm,
+  useHeadlessLogin,
+} from "@shared-test/reusejsv2-sample-login-form";
 import { ReuseButtonGroup } from "@shared-test/reusejsv2-sample-button-group";
 
 export default function Web() {
@@ -28,7 +31,7 @@ export default function Web() {
     <div className="">
       <h1 className="text-3xl">Web</h1>
 
-      <div className="w-1/3 flex flex-col items-center mx-auto ">
+      {/* <div className="w-1/3 flex flex-col items-center mx-auto ">
         <ReuseTextInput
           className="px-2"
           placeholder="Email"
@@ -59,7 +62,8 @@ export default function Web() {
         >
           Reuse Test Button
         </ReuseButton>
-      </div>
+      </div> */}
+      <ReuseLoginForm />
       <div className="w-full flex justify-center">
         {/* <HeadlessLoginForm wrapperClasses="" /> */}
         {/* <ReuseTextInput /> */}

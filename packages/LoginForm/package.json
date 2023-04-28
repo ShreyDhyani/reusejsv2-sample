@@ -19,10 +19,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "tailwind-merge": "^1.12.0"
-  },
-  "peerDependencies": {
+    "tailwind-merge": "^1.12.0",
     "@shared-test/reusejsv2-sample-button": "^1.0.2",
     "@shared-test/reusejsv2-sample-text-input": "^1.0.2"
-  }
+  },
+  "peerDependencies": {}
 }

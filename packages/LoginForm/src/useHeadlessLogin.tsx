@@ -4,14 +4,6 @@ export interface HeadlessLoginFormProps {
   loginAPI: string;
 }
 
-// export interface HeadlessLoginReturnProps {
-//   email: string;
-//   setEmail: React.Dispatch<React.SetStateAction<string | undefined>>;
-//   password: string;
-//   setPassword: React.Dispatch<React.SetStateAction<string | undefined>>;
-//   handleLogin: () => boolean;
-// }
-
 const useHeadlessLogin = (props: HeadlessLoginFormProps) => {
   const [email, setEmail] = useState<string | undefined>("");
   const [password, setPassword] = useState<string | undefined>("");
