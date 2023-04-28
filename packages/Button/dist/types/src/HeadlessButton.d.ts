@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import "../globals.css";
 export interface HeadlessButtonProps {
     children: React.ReactNode;
     onClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;

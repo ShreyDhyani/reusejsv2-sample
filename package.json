@@ -10,7 +10,10 @@
     "input:bundle": "turbo run @shared-test/reusejsv2-sample-text-input#bundle",
     "build:watch": "turbo run components#build:watch",
     "build:all": "concurrently \"cd ./packages/TextInput && yarn bundle\" \"cd ./packages/LoginForm && yarn bundle \" \"cd ./packages/ButtonGroup && yarn bundle\"",
-    "gen:comp": "node ./scripts/scaffoldComponent.mjs"
+    "gen:comp": "node ./scripts/scaffoldComponent.mjs",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",

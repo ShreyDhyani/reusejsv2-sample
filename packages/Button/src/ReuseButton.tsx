@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import HeadlessButton, { HeadlessButtonProps } from "./HeadlessButton";
 import { twMerge } from "tailwind-merge";
-import "../globals.css";
 
 export interface ReuseMergeExampleButtonProps extends HeadlessButtonProps {
   //   variant?: string;
