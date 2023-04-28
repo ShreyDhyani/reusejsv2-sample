@@ -12,7 +12,6 @@
     "@shared-test/reusejsv2-sample-button": "*",
     "@shared-test/reusejsv2-sample-text-input": "*",
     "@shared-test/reusejsv2-sample-login-form": "*",
-    "@shared-test/reusejsv2-sample-button-group": "*",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

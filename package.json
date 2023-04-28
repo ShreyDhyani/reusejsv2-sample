@@ -29,7 +29,8 @@
   "name": "reusev2-sample",
   "packageManager": "yarn@1.22.19",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "dependencies": {
     "@rollup/plugin-commonjs": "^24.1.0",

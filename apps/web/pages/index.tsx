@@ -19,7 +19,6 @@ import {
   ReuseLoginForm,
   useHeadlessLogin,
 } from "@shared-test/reusejsv2-sample-login-form";
-import { ReuseButtonGroup } from "@shared-test/reusejsv2-sample-button-group";
 
 export default function Web() {
   const [busy, setBusy] = useState(false);
@@ -67,7 +66,7 @@ export default function Web() {
       <div className="w-full flex justify-center">
         {/* <HeadlessLoginForm wrapperClasses="" /> */}
         {/* <ReuseTextInput /> */}
-        <ReuseButtonGroup>
+        {/* <ReuseButtonGroup>
           <ReuseButton
             key={1}
             className="mt-2 bg-yellow-400 active:bg-gray-400"
@@ -89,7 +88,7 @@ export default function Web() {
           >
             Button THREE
           </ReuseButton>
-        </ReuseButtonGroup>
+        </ReuseButtonGroup> */}
       </div>
     </div>
   );
