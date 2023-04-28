@@ -22,7 +22,7 @@ const ReuseLoginForm: React.FC<ReuseLoginFormProps> = (props) => {
   return (
     <div
       className={twMerge(
-        "w-1/3 flex flex-col items-center mx-auto ",
+        "w-1/3 flex flex-col items-center mx-auto border-2 border-red-800 rouded-lg py-4 px-2",
         props.wrapperClasses
       )}
     >
