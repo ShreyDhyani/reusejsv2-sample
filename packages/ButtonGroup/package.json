@@ -1,6 +1,6 @@
 {
   "name": "@shared-test/reusejsv2-sample-button-group",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -23,6 +23,6 @@
   },
   "peerDependencies": {
     "@shared-test/reusejsv2-sample-button": "^1.0.2",
-    "@shared-test/reusejsv2-sample-text-input": "^1.0.2"
+    "@shared-test/reusejsv2-sample-text-input": "^1.1.0"
   }
 }
