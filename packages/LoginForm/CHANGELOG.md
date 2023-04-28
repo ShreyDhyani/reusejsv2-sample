@@ -1,5 +1,11 @@
 # @shared-test/reusejsv2-sample-login-form
 
+## 1.1.2
+
+### Patch Changes
+
+- b6313d6: Testing
+
 ## 1.1.1
 
 ### Patch Changes
