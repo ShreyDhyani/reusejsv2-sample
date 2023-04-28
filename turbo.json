@@ -9,6 +9,19 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "web#dev": {
+      "cache": true,
+      "persistent": true
+    },
+    "@shared-test/reusejsv2-sample-button#bundle": {
+      "cache": false
+    },
+    "@shared-test/reusejsv2-sample-text-input#bundle": {
+      "cache": false
+    },
+    "components#build:watch": {
+      "cache": false
     }
   }
 }

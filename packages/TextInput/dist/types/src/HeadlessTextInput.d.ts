@@ -1,0 +1,32 @@
+import React from "react";
+export interface HeadlessTextInputProps {
+    variant?: string;
+    type?: string;
+    name?: string;
+    role?: string;
+    inputMode?: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search" | undefined;
+    wrapperClassName?: string;
+    className?: string;
+    autoComplete?: string;
+    value?: string;
+    id?: string;
+    disabled?: boolean;
+    checked?: boolean;
+    ariaDescribedby?: string;
+    htmlFor?: string;
+    placeholder?: string;
+    textInputSuffix?: React.ReactNode;
+    textInputPrefix?: React.ReactNode;
+    textInputBottom?: React.ReactNode;
+    error?: React.ReactNode;
+    label?: React.ReactNode;
+    onChange: (value?: React.ChangeEvent<HTMLInputElement>) => void;
+    onBlur?: (value?: React.FocusEvent<HTMLInputElement, Element>) => void;
+    onFocus?: (value?: React.FocusEvent<HTMLInputElement, Element>) => void;
+    onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
+    onWheel?: (e: React.WheelEvent<HTMLInputElement>) => void;
+    min?: string;
+    forceFocus?: string;
+}
+declare const HeadlessTextInput: React.FC<HeadlessTextInputProps>;
+export default HeadlessTextInput;

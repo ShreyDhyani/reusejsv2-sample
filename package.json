@@ -4,18 +4,41 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "web:dev": "turbo run web#dev",
+    "button:bundle": "turbo run @shared-test/reusejsv2-sample-button#bundle",
+    "input:bundle": "turbo run @shared-test/reusejsv2-sample-text-input#bundle",
+    "build:watch": "turbo run components#build:watch",
+    "build:all": "concurrently \"cd ./packages/TextInput && yarn bundle\" \"cd ./packages/LoginForm && yarn bundle \" \"cd ./packages/ButtonGroup && yarn bundle\"",
+    "gen:comp": "node ./scripts/scaffoldComponent.mjs"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^8.0.1",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
+    "fs-extra": "^11.1.1",
+    "path": "^0.12.7",
+    "postcss": "^8.4.23",
     "prettier": "^2.5.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tailwindcss": "^3.3.2",
     "turbo": "latest"
   },
-  "name": "ReuseV2-Sample",
+  "name": "reusev2-sample",
   "packageManager": "yarn@1.22.19",
   "workspaces": [
     "apps/*",
-    "packages/*"
-  ]
+    "packages/*",
+    "packages/components/*"
+  ],
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.21.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "tailwind-merge": "^1.12.0"
+  }
 }
